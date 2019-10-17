@@ -1,0 +1,47 @@
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+
+	{	
+		float freisek, fpersonen;
+		float iverpf = 0.03;
+		float igewinn = 100;
+
+	cout << "R E I S E K O S T E N R E C H N E R \n";
+	cout << "------------------------------------\n";
+	cout << " Grundpreis der Reise pro Person <EUR>:\t";
+	cin >> freisek;
+	cout << "Anzahl der Reisenden:\t\t\t";
+	cin >> fpersonen;
+		
+	system("cls");
+
+	cout << "R E I S E K O S T E N R E C H N E R \n";
+	cout << "__________________________________________\n";
+	cout << endl;
+	cout << "Pro Reise werden 3% Verpflegungskosten\nund 100 Euro Gewinnpauschale berechnet.\n";
+	cout << "__________________________________________\n";
+	cout << endl;
+	cout << endl;
+	cout << "Fuer die Reise ergibt sich ...\nbei '" << freisek << "' EUR Grudpreis pro Person\nund '" << fpersonen << "' Reisenden:\n";
+	cout << endl;
+	cout << "Reisepreis <EUR>\t\t\t" << freisek * fpersonen << "\n";
+	cout << "+ Verpfegungskosten <EUR>\t\t" << (freisek * fpersonen) * iverpf << "\n";
+	cout << "+ Gewinnpausche <EUR>\t\t\t" << igewinn << "\n";
+	cout << "___________________________________________\n";
+	cout << "Gesamtkosten <EUR>:\t\t\t" << ((freisek* fpersonen) + (freisek*fpersonen)*iverpf) + igewinn << "\n";
+	cout << endl;
+	cout << "--> Preis pro Person:\t "<< (((freisek* fpersonen) + (freisek*fpersonen)*iverpf) + igewinn)/fpersonen<<"\n";
+	
+	getchar();
+	getchar();
+
+	return 0;
+
+
+}
+
+
